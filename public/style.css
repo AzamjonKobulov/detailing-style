@@ -55,7 +55,6 @@
     #f1c464 52.4%,
     #d6ad4f 100%
   );
-    --background-image-union: url("./public/assets/images/union.png");
   }
 }
 @layer base {
@@ -559,9 +558,6 @@
   }
   .bg-gold {
     background-image: var(--background-image-gold);
-  }
-  .bg-union {
-    background-image: var(--background-image-union);
   }
   .bg-cover {
     background-size: cover;

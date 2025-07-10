@@ -33,8 +33,6 @@
     #d6ad4f 100%
   );
 
-  --background-image-union: url("./public/assets/images/union.png");
-
   --blur-consulatation: blur(48px);
   --shadow-consultation: 0px 0px 68px 0px #ffffff0a inset;
 }
