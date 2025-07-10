@@ -340,6 +340,9 @@
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
+  .h-10 {
+    height: calc(var(--spacing) * 10);
+  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -875,6 +878,16 @@
   .sm\:mt-7 {
     @media (width >= 640px) {
       margin-top: calc(var(--spacing) * 7);
+    }
+  }
+  .sm\:block {
+    @media (width >= 640px) {
+      display: block;
+    }
+  }
+  .sm\:hidden {
+    @media (width >= 640px) {
+      display: none;
     }
   }
   .sm\:size-5 {

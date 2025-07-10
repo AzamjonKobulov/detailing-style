@@ -35,11 +35,11 @@
       <nav
         class="2xl:h-35.5 flex-between bg-brand-whitish/10 backdrop-blur-2xl rounded-[35px] px-2 sm:px-6 2xl:px-12"
       >
-        <a href="#">
+        <a href="#" class="hidden sm:block">
           <img
             src="./assets/images/logo.png"
             alt="Logo"
-            class="h-12 w-24 sm:h-20 sm:w-40 2xl:h-32 2xl:w-auto my-auto shrink-0"
+            class="h-10 w-20 sm:h-20 sm:w-40 2xl:h-32 2xl:w-auto my-auto shrink-0"
           />
         </a>
 
@@ -56,15 +56,23 @@
               >Отзывы</a
             >
           </li>
-          <li>
+          <li class="hidden sm:block">
             <a href="#about" class="hover:text-amber-300 smooth-200">О нас</a>
           </li>
-          <li>
+          <li class="hidden sm:block">
             <a href="#contacts" class="hover:text-amber-300 smooth-200"
               >Контакты</a
             >
           </li>
         </ul>
+
+        <a href="#" class="sm:hidden">
+          <img
+            src="./assets/images/logo.png"
+            alt="Logo"
+            class="h-10 w-20 sm:h-20 sm:w-40 2xl:h-32 2xl:w-auto my-auto shrink-0"
+          />
+        </a>
 
         <div class="flex items-center gap-1.5 sm:gap-3 2xl:gap-8">
           <button
