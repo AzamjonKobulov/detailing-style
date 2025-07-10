@@ -7,10 +7,13 @@
   --max-width-base: 1567px;
 
   --color-brand-whitish: #d9d9d9;
+  --color-brand-whitish-100: #dadada;
   --color-brand-gray: #aeaeae;
   --color-brand-gray-100: #b9b9b9;
   --color-brand-gray-200: #c3c3c3;
+  --color-brand-gray-300: #9d9d9d;
   --color-brand-dark: #0f0f0f;
+  --color-brand-dark-100: #2c2c2c;
 
   --font-inter: "Inter", sans-serif;
   --font-sf: "SF Pro Display", sans-serif;
@@ -24,6 +27,11 @@
     #f1c464 52.4%,
     #d6ad4f 100%
   );
+
+  --background-image-union: url("/public/assets/images/union.png");
+
+  --blur-consulatation: blur(48px);
+  --shadow-consultation: 0px 0px 68px 0px #ffffff0a inset;
 }
 
 @layer base {
@@ -50,8 +58,7 @@
 
 .slider .slide-track {
   animation: scroll 30s linear infinite;
-  display: flex;
-  width: calc(250px * 35);
+  width: max-content;
 }
 
 .slider:hover .slide-track {
@@ -63,6 +70,26 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 7));
+    transform: translateX(-50%);
+  }
+}
+
+/* For text slider */
+.text-slider-wrapper {
+}
+
+.text-slider .slide-track {
+  animation: scroll-left 20s linear infinite;
+  width: max-content;
+}
+.text-slider:hover .slide-track {
+  animation-play-state: paused;
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

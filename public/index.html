@@ -64,11 +64,12 @@
           >
             <img src="./assets/svgs/hear.svg" alt="heart" />
           </button>
-          <button
+          <a
+            href="tel:+79203555666"
             class="h-12 shrink-0 bg-gold flex-center text-2xl font-bold text-white rounded-[10px] shadow-gold cursor-pointer px-5"
           >
-            Заказать звонок
-          </button>
+            +7 920 3 555 666
+          </a>
         </div>
       </nav>
     </header>
@@ -190,9 +191,11 @@
           <img
             src="./assets/images/gold-image.png"
             alt="Gold image"
-            class="w-[255px] h-40 rotate-[25deg] absolute right-5 top-10"
+            class="w-[255px] h-40 rotate-[25deg] absolute z-20 right-5 top-10"
           />
-          <div class="text-center relative z-20 border rounded-b-full pt-7">
+          <div
+            class="-mb-20 relative z-10 text-center bg-union bg-no-repeat bg-cover pb-18 pt-7"
+          >
             <h2 class="text-5xl font-extrabold text-white">ДетейлингStyle</h2>
             <p
               class="max-w-[989px] mx-auto text-amber-400 text-[36px]/[1.2] mt-5"
@@ -234,7 +237,25 @@
               <div class="swiper-slide">
                 <div class="h-[1046px]">
                   <img
+                    src="./assets/images/slide-2.jpg"
+                    alt="Slide"
+                    class="size-full object-cover"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="h-[1046px]">
+                  <img
                     src="./assets/images/slide-1.jpg"
+                    alt="Slide"
+                    class="size-full object-cover"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="h-[1046px]">
+                  <img
+                    src="./assets/images/slide-3.jpg"
                     alt="Slide"
                     class="size-full object-cover"
                   />
@@ -243,14 +264,26 @@
             </div>
           </div>
 
-          <div>
-            <ul class="flex list-disc gap-10 text-white text-[36px]">
-              <li>"Оклейка плёнкой"</li>
-              <li>"Тонировка"</li>
-              <li>"Шлифовка и полировка"</li>
-              <li>"Гарантия до 3 лет"</li>
-              <li>"Премиум качество"</li>
-            </ul>
+          <div
+            class="text-slider-wrapper min-w-screen h-45.5 flex items-end backdrop-blur-2xl bg-white/5 -mt-20 relative z-20"
+          >
+            <div class="text-slider overflow-hidden w-full py-10">
+              <ul
+                class="slide-track flex gap-10 text-white text-[36px] whitespace-nowrap"
+              >
+                <li class="list-disc">"Оклейка плёнкой"</li>
+                <li class="list-disc">"Тонировка"</li>
+                <li class="list-disc">"Шлифовка и полировка"</li>
+                <li class="list-disc">"Гарантия до 3 лет"</li>
+                <li class="list-disc">"Премиум качество"</li>
+                <!-- Duplicates -->
+                <li class="list-disc">"Оклейка плёнкой"</li>
+                <li class="list-disc">"Тонировка"</li>
+                <li class="list-disc">"Шлифовка и полировка"</li>
+                <li class="list-disc">"Гарантия до 3 лет"</li>
+                <li class="list-disc">"Премиум качество"</li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -441,83 +474,216 @@
           </div>
         </div>
 
-        <div class="slider flex items-center gap-11.75 py-45">
-          <div class="slide-track">
+        <div class="slider overflow-hidden my-45">
+          <div class="slide-track flex items-center gap-11.75">
             <img
               src="./assets/images/car-logo-1.png"
               alt="Car Logo"
               class="slide"
             />
-          </div>
-          <div class="slide-track">
             <img
               src="./assets/images/car-logo-2.png"
               alt="Car Logo"
               class="slide"
             />
-          </div>
-          <div class="slide-track">
             <img
               src="./assets/images/car-logo-3.png"
               alt="Car Logo"
               class="slide"
             />
-          </div>
-          <div class="slide-track">
             <img
               src="./assets/images/car-logo-4.png"
               alt="Car Logo"
               class="slide"
             />
-          </div>
-          <div class="slide-track">
             <img
               src="./assets/images/car-logo-5.png"
               alt="Car Logo"
               class="slide"
             />
-          </div>
-          <div class="slide-track">
             <img
               src="./assets/images/car-logo-6.png"
               alt="Car Logo"
               class="slide"
             />
-          </div>
-          <div class="slide-track">
             <img
               src="./assets/images/car-logo-7.png"
               alt="Car Logo"
               class="slide"
             />
-          </div>
-          <div class="slide-track">
             <img
               src="./assets/images/car-logo-8.png"
               alt="Car Logo"
               class="slide"
             />
-          </div>
-          <div class="slide-track">
             <img
               src="./assets/images/car-logo-9.png"
               alt="Car Logo"
               class="slide"
             />
-          </div>
-          <div class="slide-track">
             <img
               src="./assets/images/car-logo-10.png"
               alt="Car Logo"
               class="slide"
             />
-          </div>
-          <div class="slide-track">
             <img
               src="./assets/images/car-logo-11.png"
               alt="Car Logo"
               class="slide"
             />
+
+            <!-- Duplicate the same slides -->
+            <img
+              src="./assets/images/car-logo-1.png"
+              alt="Car Logo"
+              class="slide"
+            />
+            <img
+              src="./assets/images/car-logo-2.png"
+              alt="Car Logo"
+              class="slide"
+            />
+            <img
+              src="./assets/images/car-logo-3.png"
+              alt="Car Logo"
+              class="slide"
+            />
+            <img
+              src="./assets/images/car-logo-4.png"
+              alt="Car Logo"
+              class="slide"
+            />
+            <img
+              src="./assets/images/car-logo-5.png"
+              alt="Car Logo"
+              class="slide"
+            />
+            <img
+              src="./assets/images/car-logo-6.png"
+              alt="Car Logo"
+              class="slide"
+            />
+            <img
+              src="./assets/images/car-logo-7.png"
+              alt="Car Logo"
+              class="slide"
+            />
+            <img
+              src="./assets/images/car-logo-8.png"
+              alt="Car Logo"
+              class="slide"
+            />
+            <img
+              src="./assets/images/car-logo-9.png"
+              alt="Car Logo"
+              class="slide"
+            />
+            <img
+              src="./assets/images/car-logo-10.png"
+              alt="Car Logo"
+              class="slide"
+            />
+            <img
+              src="./assets/images/car-logo-11.png"
+              alt="Car Logo"
+              class="slide"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Consultation -->
+      <section id="consultation" class="relative">
+        <img
+          src="./assets/images/ellipse-left.png"
+          alt="Image"
+          class="absolute left-0 bottom-0"
+        />
+        <img
+          src="./assets/images/ellipse-right.png"
+          alt="Image"
+          class="absolute right-0 top-0"
+        />
+        <div class="max-w-base mx-auto px-4">
+          <div
+            class="bg-brand-whitish/5 backdrop-blur-2xl shadow-consultation rounded-[25px] pl-35 pr-27.5"
+          >
+            <div
+              class="max-w-[1406px] mx-auto flex-between items-end gap-30 py-25.75"
+            >
+              <div class="space-y-15">
+                <div class="space-y-1.75 font-sf text-white">
+                  <h2 class="text-[64px]/20 font-semibold">
+                    Нужна <br />
+                    консультация?
+                  </h2>
+                  <p class="max-w-214.75 text-2xl/9 font-medium">
+                    Оставьте заявку — и мы свяжемся с вами в ближайшее время.
+                    Поможем подобрать идеальную плёнку, стиль и услугу под ваш
+                    автомобиль. Работаем быстро, чётко и по делу.
+                  </p>
+                </div>
+
+                <div
+                  class="max-w-214.75 bg-white flex items-center gap-8 px-12 py-9 rounded-[25px]"
+                >
+                  <img src="./assets/images/coin.png" alt="Coin" />
+                  <div class="space-y-1 font-sf">
+                    <h4 class="text-2xl/9 font-medium">
+                      Сделаем быстрый расчёт стоимости
+                    </h4>
+                    <p class="text-2xl/9">
+                      Просто оставьте заявку — и мы быстро подскажем, сколько
+                      будет стоить оклейка, тонировка или полировка именно для
+                      вашего автомобиля.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="max-w-105.25 space-y-2">
+                <form action="#" class="space-y-5 text-2xl/9">
+                  <label for="name" class="block">
+                    <input
+                      type="text"
+                      id="name"
+                      class="h-22 bg-white placeholder:text-brand-gray-300 rounded-full outline-none px-10"
+                      placeholder="Имя"
+                    />
+                  </label>
+                  <label for="name" class="block">
+                    <input
+                      type="text"
+                      id="name"
+                      class="h-22 bg-white placeholder:text-brand-gray-300 rounded-full outline-none px-10"
+                      placeholder="+7 (777) 999 75 74"
+                    />
+                  </label>
+                  <button
+                    class="h-22 w-full bg-white text-brand-dark-100 rounded-full font-sf font-bold"
+                  >
+                    Получить консультацию
+                  </button>
+                </form>
+                <div class="space-y-2">
+                  <p
+                    class="font-sf text-xl/9 text-brand-whitish-100 text-center"
+                  >
+                    Так же написать можно в соц сети
+                  </p>
+                  <div class="flex-center gap-2.25">
+                    <a href="#">
+                      <img src="./assets/svgs/gmail.svg" alt="Gmail" />
+                    </a>
+                    <a href="#">
+                      <img src="./assets/svgs/whatsapp.svg" alt="Whatsapp" />
+                    </a>
+                    <a href="#">
+                      <img src="./assets/svgs/instagram.svg" alt="instagram" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
