@@ -9,4 +9,23 @@ var swiper = new Swiper(".mySwiper", {
   autoplay: {
     delay: 1000,
   },
+  centeredSlides: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 1.2,
+      spaceBetween: 28,
+    },
+    640: {
+      slidesPerView: 1.2,
+      spaceBetween: 28,
+    },
+    1024: {
+      slidesPerView: 2.2,
+      spaceBetween: 48,
+    },
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 64,
+    },
+  },
 });

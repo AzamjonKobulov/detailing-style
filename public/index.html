@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Detailing Style</title>
   </head>
-  <body class="pb-96">
+  <body class="pb-20">
     <img
       src="./assets/images/ellipse-top.png"
       alt="Ellipse"
@@ -29,15 +29,23 @@
     />
 
     <!-- HEADER -->
-    <header class="max-w-base mx-auto sticky top-0 z-50 pt-14 px-3">
+    <header
+      class="max-w-base mx-auto sticky top-0 z-50 pt-5 sm:pt-8 2xl:pt-14 px-3"
+    >
       <nav
-        class="h-35.5 flex-between bg-brand-whitish/10 backdrop-blur-2xl rounded-[35px] px-12"
+        class="2xl:h-35.5 flex-between bg-brand-whitish/10 backdrop-blur-2xl rounded-[35px] px-3.5 sm:px-6 2xl:px-12"
       >
         <a href="#">
-          <img src="./assets/images/logo.png" alt="Logo" class="h-32 my-auto" />
+          <img
+            src="./assets/images/logo.png"
+            alt="Logo"
+            class="h-8 w-16 sm:h-20 sm:w-40 2xl:h-32 2xl:w-auto my-auto shrink-0"
+          />
         </a>
 
-        <ul class="flex items-center gap-14 text-2xl text-brand-gray">
+        <ul
+          class="flex items-center gap-2.5 sm:gap-5 2xl:gap-14 text-[9px] sm:text-base 2xl:text-2xl text-brand-gray"
+        >
           <li>
             <a href="#services" class="hover:text-amber-300 smooth-200"
               >Услуги</a
@@ -58,15 +66,19 @@
           </li>
         </ul>
 
-        <div class="flex items-center gap-8">
+        <div class="flex items-center gap-1.5 sm:gap-3 2xl:gap-8">
           <button
-            class="size-14 shrink-0 bg-gold flex-center rounded-full shadow-gold cursor-pointer"
+            class="size-6 sm:size-10 2xl:size-14 shrink-0 bg-gold flex-center rounded-full shadow-gold cursor-pointer"
           >
-            <img src="./assets/svgs/hear.svg" alt="heart" />
+            <img
+              src="./assets/svgs/hear.svg"
+              alt="heart"
+              class="size-4.25 sm:size-5 2xl:size-auto"
+            />
           </button>
           <a
             href="tel:+79203555666"
-            class="h-12 shrink-0 bg-gold flex-center text-2xl font-bold text-white rounded-[10px] shadow-gold cursor-pointer px-5"
+            class="h-5 sm:h-8 2xl:h-12 shrink-0 bg-gold flex-center text-[8px] sm:text-base 2xltext-2xl font-bold text-white rounded-[10px] shadow-gold cursor-pointer px-5"
           >
             +7 920 3 555 666
           </a>
@@ -79,18 +91,22 @@
       <!-- Hero -->
       <section id="hero">
         <div
-          class="max-w-base max-h-[47.5rem] mx-auto flex items-stretch gap-7 mt-9 px-4"
+          class="max-w-base max-h-[47.5rem] mx-auto flex items-stretch gap-7 mt-9 px-3 md:px-20 lg:px-3"
         >
           <div
-            class="flex-1 bg-white/5 shadow-hero backdrop-blur-[48px] border border-white rounded-[50px] py-16.75 px-13.5"
+            class="flex-1 bg-white/5 shadow-hero backdrop-blur-[48px] sm:border border-white rounded-[50px] p-8 sm:p-10 2xl:py-16.75 2xl:px-13.5"
           >
-            <h1 class="font-semibold text-[64px] text-white leading-[1.2]">
+            <h1
+              class="font-semibold text-xl sm:text-4xl 2xl:text-[64px] text-white leading-[1.2]"
+            >
               Сделай свой
               <span class="bg-gold rounded-[35px] px-2">автомобиль</span>
               первым среди равных!
             </h1>
 
-            <p class="max-w-[866px] text-[32px] text-brand-gray-100 mt-4">
+            <p
+              class="max-w-[866px] text-xs sm:text-sm md:text-lg lg:text-xl xl:text-2xl 2xl:text-[32px] text-brand-gray-100 mt-4"
+            >
               Мы подберём для вашего автомобиля только лучшее. Плёнку, которая
               идеально подчеркнёт форму кузова. Тонировку, которая будет не
               только стильной, но и максимально функциональной. Шлифовку и
@@ -99,21 +115,23 @@
             </p>
 
             <div
-              class="max-w-[827px] grid grid-cols-2 gap-8 text-[28px] font-semibold text-white mt-16"
+              class="max-w-[827px] grid grid-cols-2 gap-2 sm:gap-3 lg:gap-5 2xl:gap-8 text-[.625rem] sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-[28px] font-semibold text-white mt-5 sm:mt-7 2xl:mt-16"
             >
               <button
-                class="h-20 bg-gold shadow-gold rounded-[10px] cursor-pointer hover:opacity-80 smooth-200 px-7"
+                class="h-8 sm:h-10 lg:h-14 2xl:h-20 bg-gold shadow-gold rounded-[10px] cursor-pointer hover:opacity-80 smooth-200 px-2 2xl:px-7"
               >
                 Получить консультацию
               </button>
               <button
-                class="h-20 bg-brand-dark border border-white rounded-[10px] cursor-pointer hover:opacity-80 smooth-200 px-7"
+                class="h-8 sm:h-10 lg:h-14 2xl:h-20 bg-brand-dark border border-white rounded-[10px] cursor-pointer hover:opacity-80 smooth-200 px-2 2xl:px-7"
               >
                 Посмотреть услуги
               </button>
             </div>
           </div>
-          <div class="w-119.25 shrink-0 rounded-[50px] overflow-hidden">
+          <div
+            class="hidden lg:block w-119.25 shrink-0 rounded-[50px] overflow-hidden"
+          >
             <img
               src="./assets/images/car.jpg"
               alt="Car"
@@ -125,22 +143,28 @@
 
       <!-- Services -->
       <section id="services">
-        <div class="max-w-base mx-auto space-y-8 pt-37.5 px-3">
-          <h2 class="font-sf font-medium text-white text-[40px]">
-            Ваши возможности безграничны.
+        <div
+          class="max-w-base mx-auto space-y-6 2xl:space-y-8 pt-12 sm:pt-16 lg:pt-20 2xl:pt-37.5 px-3 md:px-20 lg:px-3"
+        >
+          <h2
+            class="font-sf font-medium text-white text-xl sm:text-2xl lg:text-4xl 2xl:text-[40px]"
+          >
+            Ваши <br class="2xl:hidden" />
+            возможности <br class="2xl:hidden" />
+            безграничны.
           </h2>
 
-          <div class="grid grid-cols-3 gap-5 text-white">
+          <div class="grid lg:grid-cols-3 gap-5 text-white">
             <div
               class="flex gap-3 bg-white/5 shadow-hero rounded-[50px] px-4 pt-4 pb-8"
             >
               <img
                 src="./assets/images/service-1.png"
                 alt="Service"
-                class="size-26 shrink-0"
+                class="size-18.75 xs:size-26 shrink-0"
               />
               <div class="space-y-2.5">
-                <h3 class="text-xl font-black">
+                <h3 class="text-sm xs:text-xl font-black">
                   Оклейка защитными и декоративными плёнками
                 </h3>
                 <p class="text-[17px]">
@@ -156,10 +180,14 @@
               <img
                 src="./assets/images/service-2.png"
                 alt="Service"
-                class="size-26 shrink-0"
+                class="size-18.75 xs:size-26 shrink-0"
               />
               <div class="space-y-2.5">
-                <h3 class="text-xl font-black">Премиальная тонировка стёкол</h3>
+                <h3
+                  class="text-sm xs:text-base sm:text-lg md:text-xl font-black"
+                >
+                  Премиальная тонировка стёкол
+                </h3>
                 <p class="text-[17px]">
                   Защита кузова от сколов, царапин и выгорания. Матовые,
                   глянцевые, карбоновые и цветные плёнки — для стиля и
@@ -173,10 +201,14 @@
               <img
                 src="./assets/images/service-3.png"
                 alt="Service"
-                class="size-26 shrink-0"
+                class="size-18.75 xs:size-26 shrink-0"
               />
               <div class="space-y-2.5">
-                <h3 class="text-xl font-black">Шлифовка и полировка кузова</h3>
+                <h3
+                  class="text-sm xs:text-base sm:text-lg md:text-xl font-black"
+                >
+                  Шлифовка и полировка кузова
+                </h3>
                 <p class="text-[17px]">
                   Защита кузова от сколов, царапин и выгорания. Матовые,
                   глянцевые, карбоновые и цветные плёнки — для стиля и
@@ -191,14 +223,18 @@
           <img
             src="./assets/images/gold-image.png"
             alt="Gold image"
-            class="w-[255px] h-40 rotate-[25deg] absolute z-20 right-5 top-10"
+            class="w-[108px] h-[68px] lg:w-[255px] lg:h-40 rotate-[25deg] absolute z-20 right-5 top-10"
           />
           <div
             class="-mb-20 relative z-10 text-center bg-union bg-no-repeat bg-cover pb-18 pt-7"
           >
-            <h2 class="text-5xl font-extrabold text-white">ДетейлингStyle</h2>
+            <h2
+              class="text-[28px] sm:text-4xl lg:text-5xl font-extrabold text-white"
+            >
+              ДетейлингStyle
+            </h2>
             <p
-              class="max-w-[989px] mx-auto text-amber-400 text-[36px]/[1.2] mt-5"
+              class="max-w-[989px] mx-auto text-amber-400 text-sm sm:text-xl lg:text-[36px]/[1.2] mt-5"
             >
               Премиальная оклейка, тонировка и шлифовка для тех, кто выбирает
               безупречный стиль.
@@ -208,7 +244,7 @@
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="h-[1046px]">
+                <div class="h-[475px] 2xl:h-[1046px]">
                   <img
                     src="./assets/images/slide-1.jpg"
                     alt="Slide"
@@ -217,7 +253,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="h-[1046px]">
+                <div class="h-[475px] 2xl:h-[1046px]">
                   <img
                     src="./assets/images/slide-2.jpg"
                     alt="Slide"
@@ -226,7 +262,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="h-[1046px]">
+                <div class="h-[475px] 2xl:h-[1046px]">
                   <img
                     src="./assets/images/slide-3.jpg"
                     alt="Slide"
@@ -235,7 +271,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="h-[1046px]">
+                <div class="h-[475px] 2xl:h-[1046px]">
                   <img
                     src="./assets/images/slide-2.jpg"
                     alt="Slide"
@@ -244,7 +280,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="h-[1046px]">
+                <div class="h-[475px] 2xl:h-[1046px]">
                   <img
                     src="./assets/images/slide-1.jpg"
                     alt="Slide"
@@ -253,7 +289,7 @@
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="h-[1046px]">
+                <div class="h-[475px] 2xl:h-[1046px]">
                   <img
                     src="./assets/images/slide-3.jpg"
                     alt="Slide"
@@ -265,11 +301,11 @@
           </div>
 
           <div
-            class="text-slider-wrapper min-w-screen h-45.5 flex items-end backdrop-blur-2xl bg-white/5 -mt-20 relative z-20"
+            class="text-slider-wrapper min-w-screen h-16 2xl:h-45.5 flex items-end backdrop-blur-2xl bg-white/5 -mt-8 2xl:-mt-20 relative z-20"
           >
-            <div class="text-slider overflow-hidden w-full py-10">
+            <div class="text-slider overflow-hidden w-full py-5 2xl:py-10">
               <ul
-                class="slide-track flex gap-10 text-white text-[36px] whitespace-nowrap"
+                class="slide-track flex gap-10 text-white text-xs sm:text-base md:text-lg lg:text-xl 2xl:text-[36px] whitespace-nowrap"
               >
                 <li class="list-disc">"Оклейка плёнкой"</li>
                 <li class="list-disc">"Тонировка"</li>
@@ -289,8 +325,8 @@
       </section>
 
       <!-- Believe -->
-      <section id="believe" class="relative pt-68">
-        <div class="max-w-base mx-auto px-4">
+      <section id="believe" class="relative pt-36 2xl:pt-68">
+        <div class="max-w-base mx-auto px-3 md:px-20 lg:px-3">
           <img
             src="./assets/images/ellipse-middle.png"
             alt="Image"
@@ -299,28 +335,30 @@
           <img
             src="./assets/images/oil.png"
             alt="Image"
-            class="absolute left-0 top-16"
+            class="absolute left-0 top-0 lg:top-16 w-26 h-38 lg:size-auto"
           />
-          <h2 class="text-center font-semibold text-5xl text-white">
+          <h2 class="text-center font-semibold 2xl:text-5xl text-white">
             Почему нам доверяют лучшие автомобили
           </h2>
 
-          <div class="grid grid-cols-4 gap-16 mt-[140px] font-sf text-center">
+          <div
+            class="grid grid-cols-2 2xl:grid-cols-4 gap-16 mt-[140px] font-sf text-center"
+          >
             <!-- 1 -->
             <div class="flex flex-col items-center">
               <img
                 src="./assets/images/beleive-1.png"
                 alt="Image"
-                class="size-59 shrink-0"
+                class="size-32 sm:size-59 shrink-0"
               />
               <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
               <h3
-                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+                class="font-semibold text-[25px] sm:text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
               >
                 Безупречная <br />
                 точность
               </h3>
-              <p class="text-brand-gray-200 text-[15px] mt-5">
+              <p class="text-brand-gray-200 text-[10px] sm:text-[15px] mt-5">
                 Работаем с вниманием к миллиметрам. Каждая линия и шов — под
                 контролем мастера.
               </p>
@@ -330,17 +368,17 @@
               <img
                 src="./assets/images/beleive-2.png"
                 alt="Image"
-                class="size-59 shrink-0"
+                class="size-32 sm:size-59 shrink-0"
               />
               <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
               <h3
-                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+                class="font-semibold text-[25px] sm:text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
               >
                 5+ лет
                 <br />
                 опыта
               </h3>
-              <p class="text-brand-gray-200 text-[15px] mt-5">
+              <p class="text-brand-gray-200 text-[10px] sm:text-[15px] mt-5">
                 Мы знаем, как превратить любой автомобиль в стильное
                 произведение. Опыт и репутация — наш капитал.
               </p>
@@ -350,18 +388,18 @@
               <img
                 src="./assets/images/beleive-3.png"
                 alt="Image"
-                class="size-59 shrink-0"
+                class="size-32 sm:size-59 shrink-0"
               />
               <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
               <h3
-                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+                class="font-semibold text-[25px] sm:text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
               >
                 Контроль
 
                 <br />
                 качества
               </h3>
-              <p class="text-brand-gray-200 text-[15px] mt-5">
+              <p class="text-brand-gray-200 text-[10px] sm:text-[15px] mt-5">
                 Каждый этап — от оклейки до полировки проверяется вручную.
                 Качество — приоритет №1.
               </p>
@@ -371,18 +409,18 @@
               <img
                 src="./assets/images/beleive-4.png"
                 alt="Image"
-                class="size-59 shrink-0"
+                class="size-32 sm:size-59 shrink-0"
               />
               <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
               <h3
-                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+                class="font-semibold text-[25px] sm:text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
               >
                 Премиум
 
                 <br />
                 материалы
               </h3>
-              <p class="text-brand-gray-200 text-[15px] mt-5">
+              <p class="text-brand-gray-200 text-[10px] sm:text-[15px] mt-5">
                 Используем только проверенные, долговечные и сертифицированные
                 материалы из Европы и Кореи.
               </p>
@@ -392,18 +430,18 @@
               <img
                 src="./assets/images/beleive-5.png"
                 alt="Image"
-                class="size-59 shrink-0"
+                class="size-32 sm:size-59 shrink-0"
               />
               <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
               <h3
-                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+                class="font-semibold text-[25px] sm:text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
               >
                 Фотоотчёт
 
                 <br />
                 работ
               </h3>
-              <p class="text-brand-gray-200 text-[15px] mt-5">
+              <p class="text-brand-gray-200 text-[10px] sm:text-[15px] mt-5">
                 Работаем с вниманием к миллиметрам. Каждая линия и шов — под
                 контролем мастера.
               </p>
@@ -413,18 +451,18 @@
               <img
                 src="./assets/images/beleive-6.png"
                 alt="Image"
-                class="size-59 shrink-0"
+                class="size-32 sm:size-59 shrink-0"
               />
               <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
               <h3
-                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+                class="font-semibold text-[25px] sm:text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
               >
                 Чёткие
 
                 <br />
                 сроки
               </h3>
-              <p class="text-brand-gray-200 text-[15px] mt-5">
+              <p class="text-brand-gray-200 text-[10px] sm:text-[15px] mt-5">
                 Соблюдаем дедлайны. Большинство работ выполняется за 1–2 дня без
                 потери качества.
               </p>
@@ -434,18 +472,18 @@
               <img
                 src="./assets/images/beleive-7.png"
                 alt="Image"
-                class="size-59 shrink-0"
+                class="size-32 sm:size-59 shrink-0"
               />
               <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
               <h3
-                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+                class="font-semibold text-[25px] sm:text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
               >
                 Честная
 
                 <br />
                 коммуникация
               </h3>
-              <p class="text-brand-gray-200 text-[15px] mt-5">
+              <p class="text-brand-gray-200 text-[10px] sm:text-[15px] mt-5">
                 Всегда на связи. Консультации, советы, помощь в подборе стиля —
                 как для своих.
               </p>
@@ -455,18 +493,18 @@
               <img
                 src="./assets/images/beleive-8.png"
                 alt="Image"
-                class="w-41 shrink-0"
+                class="w-22 sm:w-41 shrink-0"
               />
               <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
               <h3
-                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+                class="font-semibold text-[25px] lg:text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
               >
                 Безопасность
 
                 <br />
                 авто
               </h3>
-              <p class="text-brand-gray-200 text-[15px] mt-5">
+              <p class="text-brand-gray-200 text-[10px] lg:text-[15px] mt-5">
                 Ваш автомобиль в надёжных руках. Камеры наблюдения, закрытая
                 зона, контроль доступа — всё для вашего спокойствия.
               </p>
@@ -474,119 +512,119 @@
           </div>
         </div>
 
-        <div class="slider overflow-hidden my-45">
+        <div class="slider overflow-hidden py-20 sm:my-45">
           <div class="slide-track flex items-center gap-11.75">
             <img
               src="./assets/images/car-logo-1.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-16 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-2.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-20 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-3.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-16 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-4.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-20 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-5.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-14 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-6.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-16 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-7.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-22 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-8.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-22 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-9.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-22 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-10.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-24 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-11.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-25 sm:size-auto"
             />
 
             <!-- Duplicate the same slides -->
             <img
               src="./assets/images/car-logo-1.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-16 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-2.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-20 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-3.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-16 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-4.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-20 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-5.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-14 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-6.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-16 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-7.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-22 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-8.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-22 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-9.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-22 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-10.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-24 sm:size-auto"
             />
             <img
               src="./assets/images/car-logo-11.png"
               alt="Car Logo"
-              class="slide"
+              class="slide w-25 sm:size-auto"
             />
           </div>
         </div>
@@ -604,20 +642,24 @@
           alt="Image"
           class="absolute right-0 top-0"
         />
-        <div class="max-w-base mx-auto px-4">
+        <div class="max-w-base mx-auto px-3 md:px-20 lg:px-3">
           <div
-            class="bg-brand-whitish/5 backdrop-blur-2xl shadow-consultation rounded-[25px] pl-35 pr-27.5"
+            class="bg-brand-whitish/5 backdrop-blur-2xl shadow-consultation rounded-[25px] px-7 py-9 2xl:pl-35 2xl:pr-27.5"
           >
             <div
-              class="max-w-[1406px] mx-auto flex-between items-end gap-30 py-25.75"
+              class="max-w-[1406px] mx-auto flex-between flex-col lg:flex-row lg:items-end gap-6 sm:gap-10 lg:gap-16 2xl:gap-30 2xl:py-25.75"
             >
-              <div class="space-y-15">
+              <div class="2xl:space-y-15">
                 <div class="space-y-1.75 font-sf text-white">
-                  <h2 class="text-[64px]/20 font-semibold">
+                  <h2
+                    class="text-[34px] lg:text-5xl 2xl:text-[64px]/20 font-semibold"
+                  >
                     Нужна <br />
                     консультация?
                   </h2>
-                  <p class="max-w-214.75 text-2xl/9 font-medium">
+                  <p
+                    class="max-w-214.75 text-sm sm:text-base md:text-lg 2xl:text-2xl/9 font-medium"
+                  >
                     Оставьте заявку — и мы свяжемся с вами в ближайшее время.
                     Поможем подобрать идеальную плёнку, стиль и услугу под ваш
                     автомобиль. Работаем быстро, чётко и по делу.
@@ -625,14 +667,20 @@
                 </div>
 
                 <div
-                  class="max-w-214.75 bg-white flex items-center gap-8 px-12 py-9 rounded-[25px]"
+                  class="max-w-214.75 bg-white flex gap-2 sm:gap-5 2xl:gap-8 p-3 sm:p-6 2xl:px-12 2xl:py-9 rounded-[10px] sm:rounded-2xl 2xl:rounded-[25px] mt-2"
                 >
-                  <img src="./assets/images/coin.png" alt="Coin" />
+                  <img
+                    src="./assets/images/coin.png"
+                    alt="Coin"
+                    class="size-10 sm:size-20 2xl:size-auto"
+                  />
                   <div class="space-y-1 font-sf">
-                    <h4 class="text-2xl/9 font-medium">
+                    <h4 class="sm:text-lg md:text-xl 2xl:text-2xl/9 font-bold">
                       Сделаем быстрый расчёт стоимости
                     </h4>
-                    <p class="text-2xl/9">
+                    <p
+                      class="text-xs sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl/9"
+                    >
                       Просто оставьте заявку — и мы быстро подскажем, сколько
                       будет стоить оклейка, тонировка или полировка именно для
                       вашего автомобиля.
@@ -640,13 +688,16 @@
                   </div>
                 </div>
               </div>
-              <div class="max-w-105.25 space-y-2">
-                <form action="#" class="space-y-5 text-2xl/9">
+              <div class="space-y-2">
+                <form
+                  action="#"
+                  class="flex flex-col items-center space-y-5 text-sm sm:text-base lg:text-lg 2xl:text-2xl/9"
+                >
                   <label for="name" class="block">
                     <input
                       type="text"
                       id="name"
-                      class="h-22 bg-white placeholder:text-brand-gray-300 rounded-full outline-none px-10"
+                      class="w-[262px] sm:w-80 lg:w-96 2xl:w-auto h-12 sm:h-14 lg:h-18 2xl:h-22 bg-white placeholder:text-brand-gray-300 rounded-full outline-none px-3 sm:px-5 2xl:px-10"
                       placeholder="Имя"
                     />
                   </label>
@@ -654,12 +705,12 @@
                     <input
                       type="text"
                       id="name"
-                      class="h-22 bg-white placeholder:text-brand-gray-300 rounded-full outline-none px-10"
+                      class="w-[262px] sm:w-80 lg:w-96 2xl:w-auto h-12 sm:h-14 lg:h-18 2xl:h-22 bg-white placeholder:text-brand-gray-300 rounded-full outline-none px-3 sm:px-5 2xl:px-10"
                       placeholder="+7 (777) 999 75 74"
                     />
                   </label>
                   <button
-                    class="h-22 w-full bg-white text-brand-dark-100 rounded-full font-sf font-bold"
+                    class="w-[262px] sm:w-80 lg:w-96 2xl:w-full h-12 sm:h-14 lg:h-18 2xl:h-22 bg-white text-brand-dark-100 rounded-full font-sf font-bold"
                   >
                     Получить консультацию
                   </button>
