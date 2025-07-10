@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.cdnfonts.com/css/sf-pro-display"
+      rel="stylesheet"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Detailing Style</title>
+  </head>
+  <body class="pb-96">
+    <img
+      src="./assets/images/ellipse-top.png"
+      alt="Ellipse"
+      class="absolute top-0 right-0"
+    />
+
+    <!-- HEADER -->
+    <header class="max-w-base mx-auto sticky top-0 z-50 pt-14 px-3">
+      <nav
+        class="h-35.5 flex-between bg-brand-whitish/10 backdrop-blur-2xl rounded-[35px] px-12"
+      >
+        <a href="#">
+          <img src="./assets/images/logo.png" alt="Logo" class="h-32 my-auto" />
+        </a>
+
+        <ul class="flex items-center gap-14 text-2xl text-brand-gray">
+          <li>
+            <a href="#services" class="hover:text-amber-300 smooth-200"
+              >Услуги</a
+            >
+          </li>
+          <li>
+            <a href="#reviews" class="hover:text-amber-300 smooth-200"
+              >Отзывы</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="hover:text-amber-300 smooth-200">О нас</a>
+          </li>
+          <li>
+            <a href="#contacts" class="hover:text-amber-300 smooth-200"
+              >Контакты</a
+            >
+          </li>
+        </ul>
+
+        <div class="flex items-center gap-8">
+          <button
+            class="size-14 shrink-0 bg-gold flex-center rounded-full shadow-gold cursor-pointer"
+          >
+            <img src="./assets/svgs/hear.svg" alt="heart" />
+          </button>
+          <button
+            class="h-12 shrink-0 bg-gold flex-center text-2xl font-bold text-white rounded-[10px] shadow-gold cursor-pointer px-5"
+          >
+            Заказать звонок
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <!-- Hero -->
+      <section id="hero">
+        <div
+          class="max-w-base max-h-[47.5rem] mx-auto flex items-stretch gap-7 mt-9 px-4"
+        >
+          <div
+            class="flex-1 bg-white/5 shadow-hero backdrop-blur-[48px] border border-white rounded-[50px] py-16.75 px-13.5"
+          >
+            <h1 class="font-semibold text-[64px] text-white leading-[1.2]">
+              Сделай свой
+              <span class="bg-gold rounded-[35px] px-2">автомобиль</span>
+              первым среди равных!
+            </h1>
+
+            <p class="max-w-[866px] text-[32px] text-brand-gray-100 mt-4">
+              Мы подберём для вашего автомобиля только лучшее. Плёнку, которая
+              идеально подчеркнёт форму кузова. Тонировку, которая будет не
+              только стильной, но и максимально функциональной. Шлифовку и
+              полировку, которая вернёт лаку глубину, блеск или наоборот —
+              матовую элегантность.
+            </p>
+
+            <div
+              class="max-w-[827px] grid grid-cols-2 gap-8 text-[28px] font-semibold text-white mt-16"
+            >
+              <button
+                class="h-20 bg-gold shadow-gold rounded-[10px] cursor-pointer hover:opacity-80 smooth-200 px-7"
+              >
+                Получить консультацию
+              </button>
+              <button
+                class="h-20 bg-brand-dark border border-white rounded-[10px] cursor-pointer hover:opacity-80 smooth-200 px-7"
+              >
+                Посмотреть услуги
+              </button>
+            </div>
+          </div>
+          <div class="w-119.25 shrink-0 rounded-[50px] overflow-hidden">
+            <img
+              src="./assets/images/car.jpg"
+              alt="Car"
+              class="size-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services">
+        <div class="max-w-base mx-auto space-y-8 pt-37.5 px-3">
+          <h2 class="font-sf font-medium text-white text-[40px]">
+            Ваши возможности безграничны.
+          </h2>
+
+          <div class="grid grid-cols-3 gap-5 text-white">
+            <div
+              class="flex gap-3 bg-white/5 shadow-hero rounded-[50px] px-4 pt-4 pb-8"
+            >
+              <img
+                src="./assets/images/service-1.png"
+                alt="Service"
+                class="size-26 shrink-0"
+              />
+              <div class="space-y-2.5">
+                <h3 class="text-xl font-black">
+                  Оклейка защитными и декоративными плёнками
+                </h3>
+                <p class="text-[17px]">
+                  Защита кузова от сколов, царапин и выгорания. Матовые,
+                  глянцевые, карбоновые и цветные плёнки — для стиля и
+                  сохранности.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex gap-3 bg-white/5 shadow-hero rounded-[50px] px-4 pt-4 pb-8"
+            >
+              <img
+                src="./assets/images/service-2.png"
+                alt="Service"
+                class="size-26 shrink-0"
+              />
+              <div class="space-y-2.5">
+                <h3 class="text-xl font-black">Премиальная тонировка стёкол</h3>
+                <p class="text-[17px]">
+                  Защита кузова от сколов, царапин и выгорания. Матовые,
+                  глянцевые, карбоновые и цветные плёнки — для стиля и
+                  сохранности.
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex gap-3 bg-white/5 shadow-hero rounded-[50px] px-4 pt-4 pb-8"
+            >
+              <img
+                src="./assets/images/service-3.png"
+                alt="Service"
+                class="size-26 shrink-0"
+              />
+              <div class="space-y-2.5">
+                <h3 class="text-xl font-black">Шлифовка и полировка кузова</h3>
+                <p class="text-[17px]">
+                  Защита кузова от сколов, царапин и выгорания. Матовые,
+                  глянцевые, карбоновые и цветные плёнки — для стиля и
+                  сохранности.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative pt-20">
+          <img
+            src="./assets/images/gold-image.png"
+            alt="Gold image"
+            class="w-[255px] h-40 rotate-[25deg] absolute right-5 top-10"
+          />
+          <div class="text-center relative z-20 border rounded-b-full pt-7">
+            <h2 class="text-5xl font-extrabold text-white">ДетейлингStyle</h2>
+            <p
+              class="max-w-[989px] mx-auto text-amber-400 text-[36px]/[1.2] mt-5"
+            >
+              Премиальная оклейка, тонировка и шлифовка для тех, кто выбирает
+              безупречный стиль.
+            </p>
+          </div>
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="h-[1046px]">
+                  <img
+                    src="./assets/images/slide-1.jpg"
+                    alt="Slide"
+                    class="size-full object-cover"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="h-[1046px]">
+                  <img
+                    src="./assets/images/slide-2.jpg"
+                    alt="Slide"
+                    class="size-full object-cover"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="h-[1046px]">
+                  <img
+                    src="./assets/images/slide-3.jpg"
+                    alt="Slide"
+                    class="size-full object-cover"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="h-[1046px]">
+                  <img
+                    src="./assets/images/slide-1.jpg"
+                    alt="Slide"
+                    class="size-full object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <ul class="flex list-disc gap-10 text-white text-[36px]">
+              <li>"Оклейка плёнкой"</li>
+              <li>"Тонировка"</li>
+              <li>"Шлифовка и полировка"</li>
+              <li>"Гарантия до 3 лет"</li>
+              <li>"Премиум качество"</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Believe -->
+      <section id="believe" class="relative pt-68">
+        <div class="max-w-base mx-auto px-4">
+          <img
+            src="./assets/images/ellipse-middle.png"
+            alt="Image"
+            class="absolute left-0 top-0"
+          />
+          <img
+            src="./assets/images/oil.png"
+            alt="Image"
+            class="absolute left-0 top-16"
+          />
+          <h2 class="text-center font-semibold text-5xl text-white">
+            Почему нам доверяют лучшие автомобили
+          </h2>
+
+          <div class="grid grid-cols-4 gap-16 mt-[140px] font-sf text-center">
+            <!-- 1 -->
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/images/beleive-1.png"
+                alt="Image"
+                class="size-59 shrink-0"
+              />
+              <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
+              <h3
+                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+              >
+                Безупречная <br />
+                точность
+              </h3>
+              <p class="text-brand-gray-200 text-[15px] mt-5">
+                Работаем с вниманием к миллиметрам. Каждая линия и шов — под
+                контролем мастера.
+              </p>
+            </div>
+            <!-- 2 -->
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/images/beleive-2.png"
+                alt="Image"
+                class="size-59 shrink-0"
+              />
+              <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
+              <h3
+                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+              >
+                5+ лет
+                <br />
+                опыта
+              </h3>
+              <p class="text-brand-gray-200 text-[15px] mt-5">
+                Мы знаем, как превратить любой автомобиль в стильное
+                произведение. Опыт и репутация — наш капитал.
+              </p>
+            </div>
+            <!-- 3 -->
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/images/beleive-3.png"
+                alt="Image"
+                class="size-59 shrink-0"
+              />
+              <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
+              <h3
+                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+              >
+                Контроль
+
+                <br />
+                качества
+              </h3>
+              <p class="text-brand-gray-200 text-[15px] mt-5">
+                Каждый этап — от оклейки до полировки проверяется вручную.
+                Качество — приоритет №1.
+              </p>
+            </div>
+            <!-- 4 -->
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/images/beleive-4.png"
+                alt="Image"
+                class="size-59 shrink-0"
+              />
+              <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
+              <h3
+                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+              >
+                Премиум
+
+                <br />
+                материалы
+              </h3>
+              <p class="text-brand-gray-200 text-[15px] mt-5">
+                Используем только проверенные, долговечные и сертифицированные
+                материалы из Европы и Кореи.
+              </p>
+            </div>
+            <!-- 5 -->
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/images/beleive-5.png"
+                alt="Image"
+                class="size-59 shrink-0"
+              />
+              <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
+              <h3
+                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+              >
+                Фотоотчёт
+
+                <br />
+                работ
+              </h3>
+              <p class="text-brand-gray-200 text-[15px] mt-5">
+                Работаем с вниманием к миллиметрам. Каждая линия и шов — под
+                контролем мастера.
+              </p>
+            </div>
+            <!-- 6 -->
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/images/beleive-6.png"
+                alt="Image"
+                class="size-59 shrink-0"
+              />
+              <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
+              <h3
+                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+              >
+                Чёткие
+
+                <br />
+                сроки
+              </h3>
+              <p class="text-brand-gray-200 text-[15px] mt-5">
+                Соблюдаем дедлайны. Большинство работ выполняется за 1–2 дня без
+                потери качества.
+              </p>
+            </div>
+            <!-- 7 -->
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/images/beleive-7.png"
+                alt="Image"
+                class="size-59 shrink-0"
+              />
+              <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
+              <h3
+                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+              >
+                Честная
+
+                <br />
+                коммуникация
+              </h3>
+              <p class="text-brand-gray-200 text-[15px] mt-5">
+                Всегда на связи. Консультации, советы, помощь в подборе стиля —
+                как для своих.
+              </p>
+            </div>
+            <!-- 8 -->
+            <div class="flex flex-col items-center">
+              <img
+                src="./assets/images/beleive-8.png"
+                alt="Image"
+                class="w-41 shrink-0"
+              />
+              <div class="max-w-64.25 w-full h-px bg-gold mt-3.5"></div>
+              <h3
+                class="font-semibold text-[40px] bg-gold bg-clip-text text-transparent text-center mt-2"
+              >
+                Безопасность
+
+                <br />
+                авто
+              </h3>
+              <p class="text-brand-gray-200 text-[15px] mt-5">
+                Ваш автомобиль в надёжных руках. Камеры наблюдения, закрытая
+                зона, контроль доступа — всё для вашего спокойствия.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider flex items-center gap-11.75 py-45">
+          <div class="slide-track">
+            <img
+              src="./assets/images/car-logo-1.png"
+              alt="Car Logo"
+              class="slide"
+            />
+          </div>
+          <div class="slide-track">
+            <img
+              src="./assets/images/car-logo-2.png"
+              alt="Car Logo"
+              class="slide"
+            />
+          </div>
+          <div class="slide-track">
+            <img
+              src="./assets/images/car-logo-3.png"
+              alt="Car Logo"
+              class="slide"
+            />
+          </div>
+          <div class="slide-track">
+            <img
+              src="./assets/images/car-logo-4.png"
+              alt="Car Logo"
+              class="slide"
+            />
+          </div>
+          <div class="slide-track">
+            <img
+              src="./assets/images/car-logo-5.png"
+              alt="Car Logo"
+              class="slide"
+            />
+          </div>
+          <div class="slide-track">
+            <img
+              src="./assets/images/car-logo-6.png"
+              alt="Car Logo"
+              class="slide"
+            />
+          </div>
+          <div class="slide-track">
+            <img
+              src="./assets/images/car-logo-7.png"
+              alt="Car Logo"
+              class="slide"
+            />
+          </div>
+          <div class="slide-track">
+            <img
+              src="./assets/images/car-logo-8.png"
+              alt="Car Logo"
+              class="slide"
+            />
+          </div>
+          <div class="slide-track">
+            <img
+              src="./assets/images/car-logo-9.png"
+              alt="Car Logo"
+              class="slide"
+            />
+          </div>
+          <div class="slide-track">
+            <img
+              src="./assets/images/car-logo-10.png"
+              alt="Car Logo"
+              class="slide"
+            />
+          </div>
+          <div class="slide-track">
+            <img
+              src="./assets/images/car-logo-11.png"
+              alt="Car Logo"
+              class="slide"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

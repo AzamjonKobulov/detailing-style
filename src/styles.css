@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-xxs: 375px;
+  --breakpoint-xs: 480px;
+
+  --max-width-base: 1567px;
+
+  --color-brand-whitish: #d9d9d9;
+  --color-brand-gray: #aeaeae;
+  --color-brand-gray-100: #b9b9b9;
+  --color-brand-gray-200: #c3c3c3;
+  --color-brand-dark: #0f0f0f;
+
+  --font-inter: "Inter", sans-serif;
+  --font-sf: "SF Pro Display", sans-serif;
+
+  --shadow-gold: 0px 0px 22px 2px #f1c4644d;
+  --shadow-hero: 0px 0px 68px 0px #ffffff0d inset;
+
+  --background-image-gold: linear-gradient(
+    90deg,
+    #f7c160 0%,
+    #f1c464 52.4%,
+    #d6ad4f 100%
+  );
+}
+
+@layer base {
+  body {
+    @apply font-inter bg-brand-dark leading-[1.2] overflow-x-hidden;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+}
+
+@utility flex-between {
+  @apply flex items-center justify-between;
+}
+
+@utility flex-center {
+  @apply flex items-center justify-center;
+}
+
+@utility smooth-200 {
+  @apply transition-all duration-200;
+}
+
+.slider .slide-track {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  width: calc(250px * 35);
+}
+
+.slider:hover .slide-track {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
