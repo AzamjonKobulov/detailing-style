@@ -490,6 +490,9 @@
   .items-stretch {
     align-items: stretch;
   }
+  .justify-baseline {
+    justify-content: baseline;
+  }
   .justify-center {
     justify-content: center;
   }
@@ -664,6 +667,12 @@
   }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
@@ -898,6 +907,11 @@
   .sm\:block {
     @media (width >= 640px) {
       display: block;
+    }
+  }
+  .sm\:flex {
+    @media (width >= 640px) {
+      display: flex;
     }
   }
   .sm\:hidden {
@@ -1341,6 +1355,11 @@
   .\32 xl\:grid-cols-4 {
     @media (width >= 1440px) {
       grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  .\32 xl\:justify-start {
+    @media (width >= 1440px) {
+      justify-content: flex-start;
     }
   }
   .\32 xl\:gap-8 {
